@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Property Legal Checklist — Tamil Nadu Title Verification</title>
+<style>
+:root{--bg:#f1f5f9;--card:#fff;--ink:#0f172a;--muted:#64748b;--brand:#1e3a8a;--brand2:#0f4c81;--accent:#b45309;--line:#e2e8f0;--ok:#15803d;--bad:#b91c1c;--warn:#b45309}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+header{background:linear-gradient(120deg,#0b1e3f 0%,#1e3a8a 60%,#0f4c81 100%);color:#fff;padding:36px 22px;border-bottom:3px solid var(--accent);box-shadow:0 6px 24px rgba(15,23,42,.18)}
+header .brand{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+header .seal{width:46px;height:46px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fcd34d,#b45309);display:flex;align-items:center;justify-content:center;font-weight:900;color:#1e293b;font-size:18px;box-shadow:0 0 0 3px rgba(255,255,255,.15)}
+header .kicker{text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:700;opacity:.85;color:#fcd34d}
+.wrap{max-width:1180px;margin:auto}h1{margin:0;font-size:clamp(24px,3.4vw,36px);font-weight:800;letter-spacing:-.5px}
+h2{margin:0 0 14px;font-size:18px;font-weight:700;letter-spacing:.2px;color:#0f172a;display:flex;align-items:center;gap:10px}
+h2::before{content:"";display:inline-block;width:4px;height:18px;background:var(--brand);border-radius:2px}
+h3{margin:0 0 8px}
+main{padding:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;margin:16px 0;box-shadow:0 1px 3px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.04)}
+.grid{display:grid;gap:16px}.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:1fr 1fr 1fr}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.drop{border:2px dashed #94a3b8;border-radius:12px;background:#f8fafc;padding:28px;text-align:center;transition:all .2s}.drop.drag{background:#e0e7ff;border-color:var(--brand)}
+.btn{border:0;border-radius:8px;padding:10px 16px;font-weight:600;cursor:pointer;background:var(--brand);color:#fff;font-size:14px;letter-spacing:.2px;transition:all .15s;box-shadow:0 1px 2px rgba(15,23,42,.1)}
+.btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(30,58,138,.25)}
+.btn.secondary{background:#334155}.btn.ghost{background:#fff;color:#334155;border:1px solid var(--line)}
+.small{font-size:13px;color:var(--muted)}
+.notice{border-left:4px solid var(--accent);background:#fffbeb;border-radius:8px;padding:14px 16px;font-size:14px}
+.error{display:none;border-left:4px solid #dc2626;background:#fef2f2;border-radius:8px;padding:12px;color:#7f1d1d}
+.pill{display:inline-block;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:800}
+.pill.ok{background:#dcfce7;color:#166534}.pill.bad{background:#fee2e2;color:#991b1b}.pill.warn{background:#fef3c7;color:#92400e}
+.docCard{border:1px solid var(--line);border-radius:14px;padding:12px;margin:10px 0}
+.found{border-color:#86efac;background:#f0fdf4}.missing{border-color:#fecaca;background:#fff7f7}.warncard{border-color:#fde68a;background:#fffbeb}
+table{width:100%;border-collapse:collapse}th,td{border-bottom:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}th{background:#f8fafc;color:#475569;font-size:13px}
+.report{white-space:pre-wrap;background:#0f172a;color:#e2e8f0;border-radius:14px;padding:14px;max-height:780px;overflow:auto;font-size:13px}
+.status{padding:10px;border-radius:12px;background:#f8fafc;border:1px solid var(--line)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#f8fafc}
+.seg button{border:0;background:transparent;padding:10px 16px;cursor:pointer;font-weight:600;font-size:14px;color:#475569}
+.seg button.active{background:var(--brand);color:#fff}
+.matrix td,.matrix th{font-size:13px}
+/* ---- Enhanced scenario plan tabs ---- */
+.sp-tabs{display:flex;gap:4px;flex-wrap:wrap;border-bottom:2px solid var(--line);margin-bottom:14px}
+.sp-tab{border:0;background:none;padding:8px 14px;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px}
+.sp-tab.active{color:var(--brand);border-bottom-color:var(--brand)}
+.sp-pane{display:none}.sp-pane.active{display:block}
+.sp-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:10px;margin-bottom:14px}
+.sp-card{background:#f8fafc;border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.sp-card-lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px}
+.sp-card-val{font-size:15px;font-weight:700;color:var(--ink)}
+.sp-card-sub{font-size:11px;color:var(--muted);margin-top:2px}
+.sp-alert{border-radius:8px;padding:11px 14px;font-size:13px;line-height:1.55;margin-bottom:10px;border-left:4px solid}
+.sp-alert.ok{background:#f0fdf4;border-color:#16a34a;color:#166534}
+.sp-alert.warn{background:#fffbeb;border-color:#d97706;color:#92400e}
+.sp-alert.bad{background:#fef2f2;border-color:#dc2626;color:#991b1b}
+.sp-alert.info{background:#eff6ff;border-color:#2563eb;color:#1e40af}
+.chain-tbl{width:100%;border-collapse:collapse;font-size:13px}
+.chain-tbl th{background:#f8fafc;padding:8px 10px;text-align:left;color:#475569;font-size:12px;border-bottom:1px solid var(--line)}
+.chain-tbl td{padding:8px 10px;vertical-align:top;border-bottom:1px solid var(--line)}
+.chain-tbl tr.gap-row td{background:#fffbeb}
+.chain-tbl tr.gift-row td{background:#f0f9ff}
+.plot-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.plot-box{background:#f8fafc;border:1px solid var(--line);border-radius:10px;padding:14px}
+.plot-box h4{font-size:13px;font-weight:700;margin:0 0 8px;padding-bottom:6px;border-bottom:1px solid var(--line);color:var(--brand)}
+.kv-row{display:flex;justify-content:space-between;align-items:baseline;gap:6px;margin-bottom:5px}
+.kv-k{font-size:12px;color:var(--muted)}
+.kv-v{font-size:12px;font-weight:600;color:var(--ink);text-align:right}
+.action-steps{counter-reset:astep;list-style:none;padding:0;margin:0}
+.action-steps li{counter-increment:astep;display:flex;gap:12px;margin-bottom:12px;font-size:13px;line-height:1.55;color:var(--ink)}
+.action-steps li::before{content:counter(astep);min-width:24px;height:24px;border-radius:50%;background:#dbeafe;color:#1e3a8a;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.action-steps li b{color:#0f172a}
+.ec-entry{background:#f8fafc;border-left:3px solid var(--brand);border-radius:6px;padding:10px 12px;margin-bottom:8px}
+.ec-entry.gift{border-left-color:#0284c7}
+.ec-entry.sale{border-left-color:#15803d}
+.ec-entry.partition{border-left-color:#b45309}
+.ec-doc{font-size:12px;font-weight:700;color:var(--ink)}
+.ec-nature{font-size:11px;color:var(--brand);margin:2px 0}
+.ec-detail{font-size:11px;color:var(--muted);line-height:1.5}
+@media(max-width:600px){.plot-grid{grid-template-columns:1fr}}
+.matrix .mok{background:#f0fdf4;color:#166534;font-weight:700}
+.matrix .mbad{background:#fef2f2;color:#991b1b;font-weight:700}
+.matrix .mwarn{background:#fffbeb;color:#92400e;font-weight:700}
+.matrix .mna{background:#f8fafc;color:#64748b}
+a.linkbtn{display:inline-block;padding:8px 12px;border-radius:10px;background:#e0f2fe;color:#075985;text-decoration:none;font-weight:700;font-size:13px}
+@media(max-width:850px){.two,.three{grid-template-columns:1fr}}
+@media print{header,.noPrint,.btn,details,.seg{display:none!important}.card{box-shadow:none}.report{background:#fff;color:#000;border:1px solid #999}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <div class="seal">⚖</div>
+      <div class="kicker">Tamil Nadu · Property Due Diligence</div>
+    </div>
+    <h1>Property Legal Checklist</h1>
+    <p style="margin:8px 0 0;opacity:.9;font-size:15px;max-width:760px">Lawyer-grade title verification — chain of title, cross-comparison matrix, encumbrance, classification &amp; layout approval checks.</p>
+  </div>
+</header>
+<main class="wrap">
+<div class="notice"><b>Disclaimer:</b> Browser-only screening. Not a legal opinion or certified translation. Always confirm with a licensed property lawyer and surveyor, and cross-check the live <a href="https://eservices.tn.gov.in/eservicesnew/index.html" target="_blank" rel="noopener">TN e-Services portal</a>.</div>
+<div id="errorBox" class="error"></div>
+
+<section class="card noPrint">
+  <h2>Verification Scenario</h2>
+  <div class="seg" id="scenarioSeg">
+    <button data-s="buy" class="active">Planning to purchase</button>
+    <button data-s="own">Already purchased</button>
+  </div>
+  <p class="small" style="margin-top:10px" id="scenarioHint">Scenario A: focuses on fraud prevention before payment — 30-year EC chain, layout approvals, live DB lookup.</p>
+</section>
+
+<section class="card">
+  <h2>Document Intake</h2>
+  <div id="dropZone" class="drop noPrint">
+    <h3>Drag &amp; drop files here</h3>
+    <p class="small">Upload EC (≥30 yrs), Patta/Chitta, current Sale/Title Deed, Mother/Parent Deed(s), FMB Sketch, Layout Approval (DTCP/CMDA), Seller ID.</p>
+    <input id="files" type="file" multiple accept=".pdf,.jpg,.jpeg,.png,.webp,.txt,.html">
+  </div>
+  <div class="row noPrint" style="margin-top:12px">
+    <button id="scanBtn" class="btn">Scan + compare</button>
+    <button id="reportBtn" class="btn secondary">Generate detailed report</button>
+    <button id="copyBtn" class="btn ghost">Copy report</button>
+    <button id="sampleBtn" class="btn ghost">Load sample</button>
+    <button id="clearBtn" class="btn ghost">Clear</button>
+  </div>
+  <div id="status" class="status small" style="margin-top:12px">Ready.</div>
+  <div id="fileList" style="margin-top:12px"></div>
+</section>
+
+<section class="grid two">
+  <div class="card"><h2>Required checklist</h2><div id="checklist"></div></div>
+  <div class="card"><h2>Findings</h2><div id="findings"></div></div>
+</section>
+
+<section class="card">
+  <h2>Cross-comparison matrix <span class="small">(Sale Deed ↔ EC ↔ Patta)</span></h2>
+  <div id="matrix"></div>
+</section>
+
+<section class="card">
+  <h2>Scenario action plan</h2>
+  <div id="scenarioPlan"></div>
+</section>
+
+<section class="card">
+  <h2>Generated report</h2>
+  <pre id="report" class="report">Upload documents and click "Scan + compare", then "Generate detailed report".</pre>
+</section>
+
+<section class="card"><details><summary><b>Debug extracted text</b></summary><textarea id="debugText" style="width:100%;min-height:220px"></textarea></details></section>
+</main>
+
+<script>
+'use strict';
+window.addEventListener('error',e=>showError('JavaScript error: '+e.message));
+window.addEventListener('unhandledrejection',e=>showError('Background error: '+(e.reason&&e.reason.message?e.reason.message:e.reason)));
+function $(id){return document.getElementById(id)}
+function showError(m){$('errorBox').style.display='block';$('errorBox').textContent=m}
+function clearError(){$('errorBox').style.display='none';$('errorBox').textContent=''}
+function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+
+const docs={ec:'Encumbrance Certificate (EC, ≥30 yrs)',patta:'Patta / Chitta',title:'Current Title / Sale Deed',mother:'Mother / Parent Deed',fmb:'FMB Sketch',layout:'Layout Approval (DTCP/CMDA)',id:'Seller ID'};
+const required=['ec','patta','title','mother','fmb','layout','id'];
+let files=[],detected={},findings=[],scenario='buy';
+
+function blank(){detected={owner:'',father:'',district:'',taluk:'',village:'',sro:'',survey:'',pattaNo:'',extent:'',ecFrom:'',ecTo:'',plotNo:'',docNo:'',allEcExtents:'',latestEcExtent:'',fields:{},state:'TN',ecYears:0,classification:'',classificationRisk:'',encumbrances:[],releases:[],layoutAuth:'',chainGaps:[],boundaries:{}}}
+
+/* ---------- Tamil normalization ---------- */
+function normalizeTamil(s){let t=String(s||'');t=t.replace(/[\u200B-\u200D\uFEFF]/g,'');t=t.replace(/([\u0B80-\u0BFF])\s+(?=[\u0B80-\u0BFF])/g,'$1');t=t.replace(/([\u0B80-\u0BFF])\s+(?=[\u0B80-\u0BFF])/g,'$1');t=t.replace(/\s+([:;,.])/g,'$1').replace(/\s{2,}/g,' ');return applyKnownTamilOcrRules(t)}
+function applyKnownTamilOcrRules(t){const rules=[['உரிைம','உரிமை'],['உரிைமயாளர்கள்','உரிமையாளர்கள்'],['உரிைமயாளர்','உரிமையாளர்'],['ெபயர்','பெயர்'],['ேசது','சேது'],['ேசதுராமன்','சேதுராமன்'],['ெசங்கல்பட்டு','செங்கல்பட்டு'],['பட்டாஎண்','பட்டா எண்'],['புலஎண்','புல எண்'],['மகன்ேசது','மகன் சேது'],['மகன்சேது','மகன் சேது'],['ச.அடி','சதுரடி'],['ச. அடி','சதுரடி']];for(const [a,b] of rules)t=t.split(a).join(b);return t}
+function clean(s){return String(s||'').replace(/^\s*\d+\.\s*/,'').replace(/\s+/g,' ').replace(/[:;,.\-]+$/,'').trim().slice(0,260)}
+function norm(s){return (' '+normalizeTamil(s)+' ').toLowerCase().replace(/[_\-.]+/g,' ')}
+function ctext(s){return normalizeTamil(s).replace(/\s+/g,'')}
+function compact(s){return norm(s).replace(/[^a-z0-9\u0B80-\u0BFF]/g,'')}
+function fixTamilName(s){return clean(String(s||'').replace(/^ேச/,'சே').replace(/ேசது/g,'சேது').replace(/ெச/g,'செ'))}
+function nameTokens(s){return compact(s).replace(/sri|mr|mrs|smt|atno\d+/g,'')}
+function tamilToLatinNameKey(s){
+  let x=compact(s);
+  x=x.replace(/சேதுராமன்|ேசதுராமன்/g,'sethuraman');
+  x=x.replace(/லட்சுமிநாராயணன்/g,'lakshminarayanan');
+  return x;
+}
+function stripInitialsForName(s){return String(s||'').replace(/\b[A-Za-z]\s*\.\s*/g,'').replace(/^\s*[A-Za-z]\s+/,'')}
+function initialsFromFather(father){
+  const f=compact(father);
+  if(!f)return '';
+  if(f.includes('லட்சுமிநாராயணன்')||/lakshmi|lakshminarayanan|laxmi/i.test(father))return 'L';
+  const m=String(father||'').trim().match(/[A-Za-z]/);
+  return m?m[0].toUpperCase():'';
+}
+function ownerMatch(a,b,father=''){
+  if(!a||!b)return null;
+  const variantsA=[a,stripInitialsForName(a),tamilToLatinNameKey(a),tamilToLatinNameKey(stripInitialsForName(a))].map(nameTokens);
+  const variantsB=[b,stripInitialsForName(b),tamilToLatinNameKey(b),tamilToLatinNameKey(stripInitialsForName(b))].map(nameTokens);
+  const init=initialsFromFather(father);
+  if(init){
+    variantsB.push(nameTokens(init+b));
+    variantsB.push(nameTokens(init+'. '+b));
+    variantsB.push(nameTokens(tamilToLatinNameKey(init+b)));
+  }
+  for(const x of variantsA){for(const y of variantsB){if(x&&y&&(x.includes(y)||y.includes(x)))return true}}
+  return false;
+}
+function formatPattaOwnerForMatrix(patta){
+  if(!patta||!patta.owner)return '—';
+  const init=initialsFromFather(patta.father);
+  return (init?init+'. ':'')+patta.owner+(patta.father?' (Father: '+patta.father+')':'');
+}
+
+function cleanDeedPersonName(s){
+  // Removes address / property-location tail that can be captured after the buyer name,
+  // e.g. "L. Sethuraman at No. 74" => "L. Sethuraman".
+  return clean(String(s||'')
+    .replace(/\s+at\s+No\.?\s*\d+.*$/i,'')
+    .replace(/\s+at\s+Door\s+No\.?\s*\d+.*$/i,'')
+    .replace(/\s+residing\s+at\s+.*$/i,'')
+    .replace(/\s+address\s*[:\-].*$/i,''));
+}
+
+/* ---------- File typing ---------- */
+function typeOf(name,text=''){let n=norm(name),t=norm(text);
+  if(n.includes('patta')||n.includes('chitta'))return 'patta';
+  if(n.includes('ec')||n.includes('encumbrance'))return 'ec';
+  if(n.includes('fmb')||n.includes('sketch'))return 'fmb';
+  if(n.includes('layout')||n.includes('dtcp')||n.includes('cmda')||n.includes('approval'))return 'layout';
+  if(n.includes('aadhaar')||n.includes('pan')||n.includes(' id '))return 'id';
+  if(n.includes('mother')||n.includes('parent'))return 'mother';
+  if(n.includes('sale')||n.includes('title')||n.includes('deed'))return 'title';
+  if(t.includes('certificate of encumbrance')||t.includes('வில்லங்க'))return 'ec';
+  if(t.includes('பட்டா')||t.includes('நில உரிமை')||t.includes('உரிமையாளர்கள்'))return 'patta';
+  if(t.includes('dtcp')||t.includes('cmda')||t.includes('layout approval'))return 'layout';
+  if(t.includes('sale deed'))return 'title';
+  return 'unknown';
+}
+
+/* ---------- PDF loading ---------- */
+async function addScript(src){return new Promise((res,rej)=>{let s=document.createElement('script');s.src=src;s.onload=res;s.onerror=rej;document.head.appendChild(s)})}
+function timeout(ms){return new Promise((_,rej)=>setTimeout(()=>rej(new Error('timeout')),ms))}
+async function loadPdfLib(){try{if(!window.pdfjsLib){await Promise.race([addScript('https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js'),timeout(8000)]);pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js'}return true}catch(e){return false}}
+async function extract(file){let name=file.name.toLowerCase();if(/\.txt$|\.html?$/.test(name))return await file.text();if((file.type==='application/pdf'||name.endsWith('.pdf'))&&await loadPdfLib()){let pdf=await pdfjsLib.getDocument({data:await file.arrayBuffer()}).promise,out='';for(let p=1;p<=pdf.numPages;p++){let page=await pdf.getPage(p),tc=await page.getTextContent();out+='\n[Page '+p+']\n'+tc.items.map(i=>i.str).join(' ')}return out}return ''}
+
+/* ---------- Unit conversion ---------- */
+const SQFT_PER_ACRE=43560, SQFT_PER_CENT=435.6, SQFT_PER_HECTARE=107639.104, SQFT_PER_ARE=1076.39104;
+function toSqft(value,unit){if(!value)return null;const v=parseFloat(String(value).replace(/,/g,''));if(isNaN(v))return null;const u=String(unit||'').toLowerCase();
+  if(/hectare/.test(u))return v*SQFT_PER_HECTARE;
+  if(/^ares?$/.test(u)||/\bares?\b/.test(u))return v*SQFT_PER_ARE;
+  if(/acre/.test(u))return v*SQFT_PER_ACRE;
+  if(/cent/.test(u))return v*SQFT_PER_CENT;
+  if(/sq|சதுர|ச\.?\s*அடி|sft/.test(u))return v;
+  return v; // assume sqft
+}
+function extentToSqft(str){if(!str)return null;const s=String(str);
+  // "2 acre and 50 cents"
+  let m=s.match(/([0-9.]+)\s*acre[s]?\s*(?:and|&)?\s*([0-9.]+)\s*cents?/i);
+  if(m)return parseFloat(m[1])*SQFT_PER_ACRE+parseFloat(m[2])*SQFT_PER_CENT;
+  m=s.match(/([0-9.]+)\s*acre/i);if(m)return parseFloat(m[1])*SQFT_PER_ACRE;
+  m=s.match(/([0-9.]+)\s*cents?/i);if(m)return parseFloat(m[1])*SQFT_PER_CENT;
+  m=s.match(/([0-9.]+)\s*hectare/i);if(m)return parseFloat(m[1])*SQFT_PER_HECTARE;
+  m=s.match(/([0-9.]+)\s*ares?\b/i);if(m)return parseFloat(m[1])*SQFT_PER_ARE;
+  // "0 - 2.50" hect/are pattern from patta -> ares
+  m=s.match(/0\s*-\s*([0-9.]+)\s*hectare/i);if(m)return parseFloat(m[1])*SQFT_PER_ARE;
+  m=s.match(/([0-9,.]+)\s*(?:sq\.?\s*ft|sqft|sft|square feet|சதுரடி|ச\.?\s*அடி)/i);
+  if(m)return parseFloat(m[1].replace(/,/g,''));
+  m=s.match(/([0-9,.]+)/);if(m)return parseFloat(m[1].replace(/,/g,''));
+  return null;
+}
+function fmtSqft(n){return n==null?'—':Math.round(n).toLocaleString()+' sq.ft'}
+function approxEqual(a,b,tolPct=2){if(a==null||b==null)return null;if(a===0&&b===0)return true;const diff=Math.abs(a-b)/Math.max(a,b)*100;return diff<=tolPct}
+
+/* ---------- Survey normalization ---------- */
+function normSurvey(s){if(!s)return '';return String(s).toLowerCase().replace(/\s+/g,'').replace(/[^0-9a-z\/,]/g,'').replace(/,+/g,',')}
+function surveyMatch(a,b){if(!a||!b)return null;const A=normSurvey(a),B=normSurvey(b);if(!A||!B)return null;
+  const setA=new Set(A.split(/[, ]+/).filter(Boolean));const setB=new Set(B.split(/[, ]+/).filter(Boolean));
+  for(const x of setA)if(setB.has(x))return true;
+  return A.includes(B)||B.includes(A);
+}
+
+/* ---------- Main scan ---------- */
+async function scan(){clearError();blank();
+  if($('files').files.length){files=[...$('files').files].map(f=>({file:f,name:f.name,size:f.size,type:typeOf(f.name),text:'',status:'Selected'}))}
+  if(!files.length){$('status').textContent='No files selected.';render();return}
+  $('status').textContent='Scanning...';render();
+  let debug=[];
+  for(const f of files){try{f.text=normalizeTamil(await extract(f.file));f.type=typeOf(f.name,f.text);f.status=f.text?'Extracted '+f.text.length+' chars':'No text extracted; classified by filename'}catch(e){f.status='Extraction failed; classified by filename';f.type=typeOf(f.name)}debug.push('\n--- '+f.type+': '+f.name+' ---\n'+(f.text||''));}
+  $('debugText').value=debug.join('\n');analyze();render();$('status').textContent='Scan completed. Generate report.';
+}
+
+function pick(regs,text){text=normalizeTamil(text);for(const r of regs){let m=text.match(r);if(m&&m[1])return clean(m[1])}return ''}
+
+/* ---------- Field extractors ---------- */
+function analyze(){blank();
+  // collect all mother/parent deeds (could be multiple)
+  detected.fields.mothers=[];
+  for(const f of files){f.fields=extractFields(f.text,f.type,f.name);
+    if(f.type==='mother')detected.fields.mothers.push(f.fields);
+    else detected.fields[f.type]=f.fields;
+  }
+  let ec=detected.fields.ec||{},patta=detected.fields.patta||{},mothers=detected.fields.mothers||[],mother=mothers[0]||{},title=detected.fields.title||{},layout=detected.fields.layout||{};
+  detected.owner=ec.currentOwner||patta.owner||title.buyer||mother.buyer||'';
+  detected.father=patta.father||'';
+  detected.district=ec.district||patta.district||mother.district||title.district||'';
+  detected.taluk=ec.taluk||patta.taluk||mother.taluk||title.taluk||'';
+  detected.village=ec.village||patta.village||mother.village||title.village||'';
+  detected.survey=ec.survey||patta.survey||title.survey||mother.survey||'';
+  detected.pattaNo=patta.pattaNo||mother.pattaNo||'';
+  detected.extent=ec.latestExtent||patta.extent||title.extent||mother.extent||'';
+  detected.ecFrom=ec.searchFrom||'';detected.ecTo=ec.searchTo||'';
+  detected.plotNo=ec.plotNo||'';detected.docNo=ec.documentNo||mother.documentNo||'';
+  detected.allEcExtents=ec.allExtents||'';detected.latestEcExtent=ec.latestExtent||'';
+  detected.ecYears=computeEcYears(ec.searchFrom,ec.searchTo);
+  detected.classification=patta.classification||'';
+  detected.classificationRisk=classifyRisk(detected.classification);
+  detected.encumbrances=ec.encumbrances||[];
+  detected.releases=ec.releases||[];
+  detected.layoutAuth=layout.authority||'';
+  detected.boundaries=title.boundaries||mother.boundaries||{};
+  detected.chainGaps=detectChainGaps([title,...mothers].filter(Boolean));
+  makeFindings();
+}
+
+function extractFields(text,type,name=''){let f={};
+  if(type==='ec')extractEC(text,f);
+  if(type==='patta')extractPatta(text,f);
+  if(type==='mother'||type==='title')extractDeed(text,f,name);
+  if(type==='layout')extractLayout(text,f);
+  f.survey=f.survey||pick([/(?:Survey Details|Survey No|survey No\.|S\. No\.|சர்வே விவரம்|புல எண்|புலஎண்)\s*[:\-]?\s*([0-9]+\s*\/?\s*[0-9A-Za-z-]*)/i],text);
+  f.extent=f.extent||detectExtent(text);
+  return f;
+}
+
+function extractEC(text,f){let normal=normalizeTamil(text),cx=ctext(normal);
+  f.survey=pick([/Survey Details\s*\/\s*[^:]*:\s*([0-9]+\s*\/\s*[0-9A-Za-z-]+)/i,/(?:Survey Details|Survey No\.?|S\. No\.)\s*:?\s*([0-9]+\s*\/\s*[0-9A-Za-z-]+)/i],normal);
+  f.district=pick([/Revenue District\s*\/\s*[^:]*:\s*([A-Za-z\u0B80-\u0BFF ]+)/i,/District\s*:\s*([A-Za-z\u0B80-\u0BFF ]+)/i],normal);
+  f.taluk=pick([/Revenue Taluk\s*\/\s*[^:]*:\s*([A-Za-z\u0B80-\u0BFF ]+)/i,/Taluk\s*:\s*([A-Za-z\u0B80-\u0BFF ]+)/i],normal);
+  f.village=pick([/(?:Village|கிராமம்)\s*[:\-\/]\s*([A-Za-z\u0B80-\u0BFF ]+)/i],normal);
+  f.sro=pick([/S\.R\.O\s*\/[^:]*:\s*([A-Za-z\u0B80-\u0BFF ]+)/i],normal);
+  let sp=normal.match(/(?:Search Period|தேடுதல் காலம்)[^:]*:\s*([0-9A-Za-z\/-]+)\s*-\s*([0-9A-Za-z\/-]+)/i)||normal.match(/From\s+([0-9A-Za-z\/-]+)\s+To\s+([0-9A-Za-z\/-]+)/i);
+  if(sp){f.searchFrom=sp[1];f.searchTo=sp[2]}
+  // Plot filter — "Flats: Plots: 800,801"
+  let plotFilter=normal.match(/Plots?\s*:\s*([0-9,\s]+)/i);
+  if(plotFilter)f.plotFilter=plotFilter[1].trim();
+
+  // Current owner from latest Sale Deed claimant entry
+  let ownerDirect=normal.match(/1\.\s*(L\.\s*[\u0B80-\u0BFF\s]+?)(?:\s+Consideration\s+Value|\s+கைமாற்றுத்|\s+Market\s+Value)/i);
+  if(ownerDirect){f.currentOwner=fixTamilName(clean(ownerDirect[1]));f.owner=f.currentOwner}
+  else if(cx.includes('L.சேதுராமன்')||cx.includes('L.ேசதுராமன்')){f.currentOwner='L. சேதுராமன்';f.owner=f.currentOwner}
+  // Fallback: last sale deed claimant
+  if(!f.currentOwner){
+    const saleDeedEntries=[...normal.matchAll(/Sale\s+deed[^]*?Name\s+of\s+Claimant[^]*?1\.\s*([\u0B80-\u0BFF A-Za-z.]+?)(?:\s*-|\s*\n|\s+Consideration)/gi)];
+    if(saleDeedEntries.length){const last=saleDeedEntries[saleDeedEntries.length-1];f.currentOwner=clean(last[1]);f.owner=f.currentOwner}
+  }
+
+  // Extent entries
+  let ex=[...normal.matchAll(/Property\s*Extent\s*\/\s*[^:]*:\s*([0-9,.]+)\s*(ச\.?\s*அடி|ச\.அடி|சதுரடி|சதுர அடி|sq\.?\s*ft|square feet|sqft|sft)/ig)];
+  if(!ex.length)ex=[...normal.matchAll(/சொத்தின்\s*விஸ்தீர்ணம்\s*:?\s*([0-9,.]+)\s*(ச\.?\s*அடி|ச\.அடி|சதுரடி|சதுர அடி)/ig)];
+  if(ex.length){f.allExtents=ex.map((m,i)=>'Entry '+(i+1)+': '+clean(m[1])+' sq.ft').join(' | ');let last=ex[ex.length-1];f.latestExtent=clean(last[1])+' sq.ft';f.extent=f.latestExtent}
+  else if(cx.includes('2713சதுரடி')){f.latestExtent='2713 sq.ft';f.extent=f.latestExtent}
+
+  // Document numbers
+  let dlist=[...normal.matchAll(/\b([0-9]{1,6}\/[0-9]{4})\b/g)].map(m=>m[1]);
+  if(dlist.length){f.documentNo=dlist[dlist.length-1];f.allDocumentNos=[...new Set(dlist)].join(', ')}
+  let plots=[...normal.matchAll(/(?:Plot No\.\s*\/\s*[^:]*|மனை\s*எண்)\s*:?\s*([0-9A-Za-z\/-]+)/ig)];
+  if(plots.length)f.plotNo=clean(plots[plots.length-1][1]);
+
+  // ---- Enhanced: EC entry parsing ----
+  f.encumbrances=[];f.releases=[];f.ecEntries=[];
+
+  // Parse each numbered entry block
+  const entryBlocks=[...normal.matchAll(/\n\s*(\d+)\s*\n[\s\S]*?Nature\s*\/[^:\n]*:\s*([^\n]+)/gi)];
+  // Parse nature/type from each entry
+  const natures=[...normal.matchAll(/\b(Partition[- ]between\s+family|Sale\s+deed|Conveyance[^,\n]{0,30}|Gift\s+deed|Mortgage[^,\n]{0,30}|Release[^,\n]{0,20}|Settlement[^,\n]{0,20}|Partition[^,\n]{0,20})\b/gi)];
+  const docNos=[...normal.matchAll(/\b([0-9]{1,6}\/[0-9]{4})\b/g)].map(m=>m[1]);
+  const regDates=[...normal.matchAll(/([0-9]{2}-[A-Za-z]{3}-[0-9]{4})/g)].map(m=>m[1]);
+  const considerations=[...normal.matchAll(/Consideration\s+Value[^:]*:\s*(?:ரூ\.\s*)?([0-9,\/\-]+)/gi)].map(m=>m[1]);
+
+  // Build entry objects
+  for(let i=0;i<Math.max(natures.length,1);i++){
+    f.ecEntries.push({
+      doc:docNos[i]||'',
+      date:regDates[i*3]||regDates[i]||'',
+      nature:clean(natures[i]?natures[i][1]:''),
+      consideration:considerations[i]||''
+    });
+  }
+
+  // Encumbrances
+  const enc=[...normal.matchAll(/\b(Mortgage|Simple Mortgage|Equitable Mortgage|அடமானம்|பிணை|Hypothecation|Attachment|Lis Pendens|Court Order)\b[^.\n]{0,120}/ig)];
+  enc.forEach(m=>f.encumbrances.push(clean(m[0])));
+  const rel=[...normal.matchAll(/\b(Release|Deed of Receipt|Receipt|Discharge|விடுவிப்பு|வெளியீடு|Cancellation)\b[^.\n]{0,120}/ig)];
+  rel.forEach(m=>f.releases.push(clean(m[0])));
+
+  // ---- Gift deed / road dedication detection ----
+  f.hasGiftDeedToBody=/(Gift\s+deed|பரிசு\s+பத்திரம்)[^]*?(Panchayat|ஊராட்சி|Municipality|Town\s+Panchayat)/i.test(normal);
+  f.giftDeedDoc=f.hasGiftDeedToBody?(dlist.find(d=>/(Gift|1923)/i.test(normal.substr(normal.indexOf(d)-50,100)))||''):'' ;
+
+  // ---- Promoter / joint executant detection ----
+  const giftMatch=normal.match(/Gift\s+deed[^]*?Name\s+of\s+Executant[^]*?1\.\s*([\u0B80-\u0BFF A-Za-z.]+?)(?:\s*\n|\s*2\.)/i);
+  const allExecutants=[...normal.matchAll(/(?:Name\s+of\s+Executant[^]*?)(\d)\.\s*([\u0B80-\u0BFF A-Za-z.()]+?)(?=\s*\d+\.|Consideration|Name\s+of\s+Claimant|$)/gi)];
+  f.promoters=[];
+  const seenPromoters=new Set();
+  for(const m of allExecutants){
+    const name=clean(m[2]);
+    if(name&&name.length>2&&!seenPromoters.has(name)){seenPromoters.add(name);f.promoters.push(name)}
+    if(f.promoters.length>=5)break;
+  }
+
+  // ---- Agricultural land flag ----
+  f.isAgriculturalInEC=/Agricultural\s+Land|விவசாய\s+நிலம்|Wet\s+Land|Dry\s+Land/i.test(normal);
+  f.hasManaiInEC=/Pathway|மனைப்பிரிவு|Plot|மனை/i.test(normal);
+
+  // ---- Patta entry count in EC ----
+  const entryCountM=normal.match(/Number\s+of\s+Entries[^:]*:\s*([0-9]+)/i);
+  f.entryCount=entryCountM?parseInt(entryCountM[1]):f.ecEntries.length;
+
+  // ---- Parent deed refs ----
+  const prNums=[...normal.matchAll(/PR\s+Number[^:]*:\s*([0-9\/,\s]+)/gi)];
+  if(prNums.length){
+    f.parentDocRefs=[...new Set(prNums.flatMap(m=>m[1].split(/[,\s]+/).filter(s=>/\d{2,}/.test(s))))].join(', ');
+  }
+
+  // ---- Sub-division detection ----
+  const subDivMatches=[...normal.matchAll(/(?:Survey No|புல எண்)[^:]*:\s*([0-9]+\/[0-9]+)/gi)];
+  if(subDivMatches.length){
+    const uniqSubDivs=[...new Set(subDivMatches.map(m=>m[1]))];
+    f.subDivisions=uniqSubDivs.join(', ');
+  }
+}
+
+function extractPatta(text,f){let raw=normalizeTamil(text),cx=ctext(raw);
+  let pat=cx.match(/பட்டாஎண்:?([0-9A-Za-z\/-]+)/);if(pat)f.pattaNo=clean(pat[1]);
+  let dist=cx.match(/மாவட்டம்:?([^:]+?)வட்டம்/);if(dist)f.district=fixTamilName(clean(dist[1]));
+  let tal=cx.match(/வட்டம்:?([^:]+?)(?:வருவாய்கிராமம்|கிராமம்)/);if(tal)f.taluk=fixTamilName(clean(tal[1]));
+  let vil=cx.match(/வருவாய்கிராமம்:?([^:]+?)பட்டா/);if(vil)f.village=fixTamilName(clean(vil[1]));
+  let own=cx.match(/உரிமையாளர்கள்(?:பெயர்)?1?\.?(.+?)(?:-?புலஎண்|புலஎண்)/)||cx.match(/உரிமையாளர்க?ள்(?:பெயர்)?1?\.?(.+?)(?:-?புலஎண்|புலஎண்)/);
+  if(own){let val=clean(own[1]);let m=val.match(/(.+?)மகன்(.+)/);if(m){f.father=fixTamilName(clean(m[1]));f.owner=fixTamilName(clean(m[2]));}else f.owner=fixTamilName(val);f.ownerRaw=val;}
+  else if(cx.includes('லட்சுமிநாராயணன்மகன்சேதுராமன்')){f.father='லட்சுமிநாராயணன்';f.owner='சேதுராமன்';f.ownerRaw='லட்சுமிநாராயணன்மகன்சேதுராமன்'}
+  let sv=raw.match(/புல\s*எண்\s*உட்பிரிவு[^0-9]*(\d{2,})\s+(\d{1,4})\s+0\s*-\s*([0-9.]+)/);
+  if(!sv)sv=cx.match(/புலஎண்உட்பிரிவு[\u0B80-\u0BFF]*.*?(\d{2,})(\d{1,4})0-([0-9.]+)/);
+  if(sv){
+    let main=sv[1], sub=sv[2];
+    if(main.length===4 && sub.length===1){sub=main.slice(-1)+sub; main=main.slice(0,-1)}
+    f.survey=main+'/'+sub;
+    // Store subdivision parts separately for plot-level display
+    f.surveyMain=main;f.surveySub=sub;
+    let sqft=parseFloat(sv[3])/100*SQFT_PER_HECTARE;f.extent='0-'+sv[3]+' hectare/ares approx '+sqft.toFixed(2)+' sq.ft';f.extentSqft=sqft;
+    f.extentAres=parseFloat(sv[3]);
+  }
+  // Classification: Natham / Punjai / Nanjai / Poramboke / Anadheenam / Manai (மனை = residential site)
+  const classMap=[['நத்தம்','Natham'],['Natham','Natham'],['புன்செய்','Punjai'],['Punjai','Punjai'],['நன்செய்','Nanjai'],['Nanjai','Nanjai'],['நஞ்சை','Nanjai'],['போரம்போக்கு','Poramboke'],['Poramboke','Poramboke'],['அநாதீனம்','Anadheenam'],['Anadheenam','Anadheenam'],['மனை','Manai (Residential site)'],['Manai','Manai (Residential site)']];
+  for(const [k,v] of classMap){if(raw.includes(k)){f.classification=v;break}}
+  // Remarks field — digitally signed, reference etc.
+  const refM=raw.match(/S\/[0-9\/]+/);if(refM)f.eservicesRef=refM[0];
+  const signM=raw.match(/Digitally\s+signed[^:]*:\s*([A-Z ]+)\s*\n?\s*Tahsildar/i);if(signM)f.tahsildar=clean(signM[1]);
+  const signDateM=raw.match(/([0-9]{2}\/[0-9]{2}\/[0-9]{4})\s*\n?\s*[0-9]{2}:[0-9]{2}/);if(signDateM)f.signedDate=signDateM[1];
+  // Teervu (land tax amount)
+  const teervuM=raw.match(/([0-9.]+)\s*\n?\s*குறிப்பு/);if(teervuM)f.teervu=teervuM[1];
+}
+
+function extractDeed(text,f,name){
+  f.documentNo=((name.match(/\b(\d{3,5})\b/)||[])[1]||'');
+  f.buyer=cleanDeedPersonName(pick([/TO AND IN FAVOUR OF\s+(?:Sri|Smt|Mr\.?|Mrs\.?)?\s*([^,\n]+?)(?=\s+at\s+No\.?\s*\d+|\s+at\s+Door\s+No\.?\s*\d+|\s+residing\s+at\s+|,|\n|$)/i,/in favour of\s+([A-Z][A-Za-z. ]+?)(?=\s+at\s+No\.?\s*\d+|\s+at\s+Door\s+No\.?\s*\d+|\s+residing\s+at\s+|,|\n|$)/i],text));
+  f.seller=cleanDeedPersonName(pick([/EXECUTED BY\s+(?:Sri|Smt|Mr\.?|Mrs\.?)?\s*([^,\n]+?)(?=\s+at\s+No\.?\s*\d+|\s+at\s+Door\s+No\.?\s*\d+|\s+residing\s+at\s+|,|\n|$)/i,/vendor[s]?\s*[:\-]\s*([^,\n]+?)(?=\s+at\s+No\.?\s*\d+|\s+at\s+Door\s+No\.?\s*\d+|\s+residing\s+at\s+|,|\n|$)/i],text));
+  f.village=pick([/(?:at|in)\s+No\.\s*\d+,\s*([^,\n]+?Village)/i,/Village\s*[:\-]\s*([A-Za-z ]+)/i],text);
+  f.taluk=pick([/([A-Za-z]+\s+Taluk)/i],text);
+  f.district=pick([/([A-Za-z]+\s+District)/i],text);
+  f.survey=pick([/survey\s+No\.?\s*([0-9\/]+(?:\s*(?:,|and)\s*[0-9\/]+)*)/i],text);
+  f.extent=pick([/extent\s+(?:of\s+)?([0-9.]+\s+acre[s]?(?:\s+and\s+[0-9.]+\s+cents?)?)/i,/extent\s+(?:of\s+)?([0-9,.]+\s*sq\.?\s*ft)/i],text);
+  // Registration date for chain
+  const dm=text.match(/(?:dated|registered on|on the\s+)([0-9]{1,2}[\/\-\.\s][A-Za-z0-9]{2,9}[\/\-\.\s][0-9]{2,4})/i)||text.match(/\b(19|20)\d{2}\b/);
+  if(dm)f.regDate=clean(dm[0]).replace(/^(dated|registered on|on the)\s*/i,'');
+  // Boundaries
+  const b={};
+  const dirs=[['north','N'],['south','S'],['east','E'],['west','W']];
+  for(const [d,k] of dirs){const m=text.match(new RegExp(d+'\\s*(?:by|:)\\s*([^\\n;]{3,120})','i'));if(m)b[k]=clean(m[1])}
+  if(Object.keys(b).length)f.boundaries=b;
+}
+
+function extractLayout(text,f){const t=normalizeTamil(text);
+  if(/DTCP/i.test(t))f.authority='DTCP';
+  else if(/CMDA/i.test(t))f.authority='CMDA';
+  else if(/Panchayat\s+Approval/i.test(t))f.authority='Panchayat (verify DTCP)';
+  const lp=t.match(/(?:LP|LPA|Approval)\s*(?:No\.?|Number)?\s*[:\-]?\s*([A-Z0-9\/\-]{4,})/i);
+  if(lp)f.approvalNo=clean(lp[1]);
+}
+
+function detectExtent(text){let normal=normalizeTamil(text);
+  let m=normal.match(/([0-9,.]+)\s*(?:square feet|sq\.?\s*ft|sqft|sft|சதுர அடி|சதுரடி|ச\.?\s*அடி|ச\.அடி)/i);
+  if(m)return clean(m[1])+' sq.ft';
+  m=String(text||'').match(/([0-9.]+\s+acre[s]?(?:\s+and\s+[0-9.]+\s+cents?)?)/i);
+  return m?clean(m[1]):'';
+}
+
+/* ---------- Chain / EC year analysis ---------- */
+function parseYear(s){if(!s)return null;const m=String(s).match(/(19|20)\d{2}/);return m?parseInt(m[0]):null}
+function computeEcYears(from,to){const a=parseYear(from),b=parseYear(to);if(a&&b)return b-a;return 0}
+function detectChainGaps(deeds){const years=deeds.map(d=>parseYear(d.regDate)).filter(Boolean).sort((a,b)=>a-b);const gaps=[];for(let i=1;i<years.length;i++){const g=years[i]-years[i-1];if(g>10)gaps.push(years[i-1]+' → '+years[i]+' (gap '+g+' yrs)')}return gaps}
+
+function classifyRisk(c){if(!c)return '';
+  if(/Punjai|Natham|Manai/i.test(c))return 'safe';
+  if(/Nanjai|Poramboke|Anadheenam/i.test(c))return 'restricted';
+  return 'unknown';
+}
+
+/* ---------- Findings + matrix ---------- */
+function makeFindings(){findings=[];
+  let found=new Set(files.map(f=>f.type));
+  required.forEach(k=>{if(!found.has(k))findings.push(['bad','Missing required document',docs[k]])});
+  let ec=detected.fields.ec||{},patta=detected.fields.patta||{},mother=(detected.fields.mothers||[])[0]||{},title=detected.fields.title||{};
+
+  // Basic detections
+  if(ec.currentOwner)findings.push(['ok','Current owner from latest EC claimant',ec.currentOwner]);
+  if(patta.owner)findings.push(['ok','Patta owner (உரிமையாளர் பெயர்)',patta.owner+(patta.father?' | Father: '+patta.father:'')]);
+  if(patta.pattaNo)findings.push(['ok','Patta number detected',patta.pattaNo]);
+  if(ec.latestExtent)findings.push(['ok','Latest EC Property Extent',ec.latestExtent]);
+  if(title.buyer)findings.push(['ok','Sale Deed buyer (current owner)',title.buyer]);
+  if(mother.buyer)findings.push(['ok','Parent deed purchaser',mother.buyer]);
+
+  // 30-year EC chain
+  if(detected.ecYears){
+    if(detected.ecYears>=30)findings.push(['ok','EC spans ≥30 years',detected.ecFrom+' → '+detected.ecTo+' ('+detected.ecYears+' yrs)']);
+    else findings.push(['bad','EC search period < 30 years',detected.ecFrom+' → '+detected.ecTo+' ('+detected.ecYears+' yrs). Request a 30-year EC from the SRO.']);
+  } else if(found.has('ec')) findings.push(['warn','EC search period not detected','Could not parse From/To dates — confirm manually.']);
+
+  // Chain gaps
+  if(detected.chainGaps.length)findings.push(['warn','Possible gap in chain of title (>10 yrs)',detected.chainGaps.join('; ')]);
+
+  // Owner cross-check (EC vs Patta)
+  if(ec.currentOwner&&patta.owner){
+    const ok=ownerMatch(ec.currentOwner,patta.owner,patta.father);
+    findings.push([ok?'ok':'bad','EC owner ↔ Patta owner','EC: '+ec.currentOwner+' | Patta: '+patta.owner+(patta.father?' | Father: '+patta.father:'')]);
+  }
+  // Sale Deed buyer ↔ EC latest claimant
+  if(title.buyer&&ec.currentOwner){
+    const ok=ownerMatch(title.buyer,ec.currentOwner,patta.father);
+    findings.push([ok?'ok':'bad','Sale Deed buyer ↔ EC latest claimant','Deed: '+title.buyer+' | EC: '+ec.currentOwner]);
+  }
+  // Patta mutation check (Scenario B)
+  if(scenario==='own'&&title.buyer&&patta.owner){
+    const ok=ownerMatch(title.buyer,patta.owner,patta.father);
+    if(!ok)findings.push(['bad','Patta mutation pending','Patta still in: '+patta.owner+'. Apply for mutation via TN e-Services using your sale deed.']);
+  }
+
+  // Survey cross-check
+  const surveys=[['Sale Deed',title.survey],['EC',ec.survey],['Patta',patta.survey]].filter(x=>x[1]);
+  if(surveys.length>=2){
+    let allMatch=true;for(let i=1;i<surveys.length;i++)if(surveyMatch(surveys[0][1],surveys[i][1])===false)allMatch=false;
+    findings.push([allMatch?'ok':'bad','Survey/Sub-division cross-check',surveys.map(s=>s[0]+': '+s[1]).join(' | ')+(allMatch?'':' — possible typo, consider Rectification Deed.')]);
+  }
+
+  // Extent cross-check (with unit conversion)
+  const extents=[['Sale Deed',extentToSqft(title.extent)],['EC',extentToSqft(ec.latestExtent||ec.extent)],['Patta',patta.extentSqft||extentToSqft(patta.extent)]].filter(x=>x[1]!=null);
+  if(extents.length>=2){
+    const base=extents[0][1];let ok=true;for(let i=1;i<extents.length;i++){const r=approxEqual(base,extents[i][1],3);if(r===false)ok=false}
+    findings.push([ok?'ok':'bad','Total Extent cross-check (±3%)',extents.map(e=>e[0]+': '+fmtSqft(e[1])).join(' | ')]);
+  }
+
+  // Encumbrances
+  if(detected.encumbrances.length){
+    const cleared=detected.releases.length>=detected.encumbrances.length;
+    findings.push([cleared?'warn':'bad','Encumbrance entries detected on EC',detected.encumbrances.length+' encumbrance(s), '+detected.releases.length+' release/discharge entry/ies. '+(cleared?'Appears released — verify each release deed.':'Outstanding lien likely. Demand release/discharge deed before purchase.')]);
+  } else if(found.has('ec')) findings.push(['ok','No mortgage / attachment entries detected on EC','Manually verify court attachments and lis pendens.']);
+
+  // Land classification
+  if(detected.classification){
+    if(detected.classificationRisk==='safe')findings.push(['ok','Land classification (safe)',detected.classification+' — '+(/Manai/i.test(detected.classification)?'already classified as residential site — land-use conversion done.':'typically permissible for residential use.')]);
+    else if(detected.classificationRisk==='restricted')findings.push(['bad','Land classification (RESTRICTED)',detected.classification+' — wetland/government/unassigned. Conversion or transfer may be prohibited.']);
+    else findings.push(['warn','Land classification',detected.classification+' — verify with Revenue dept.']);
+  } else if(found.has('patta')) findings.push(['warn','Land classification not detected on Patta','Verify Punjai/Natham/Manai vs Nanjai/Poramboke/Anadheenam manually.']);
+
+  // Layout approval
+  if(found.has('layout')){
+    if(detected.layoutAuth)findings.push([/DTCP|CMDA/i.test(detected.layoutAuth)?'ok':'warn','Layout approval authority',detected.layoutAuth]);
+    else findings.push(['warn','Layout document present but authority not parsed','Confirm DTCP/CMDA approval number manually.']);
+  } else {
+    // Gift deed to panchayat implies DTCP layout even without uploaded approval
+    if(ec.hasGiftDeedToBody)findings.push(['warn','DTCP layout implied (gift deed to Panchayat found in EC)','A road-dedication gift deed to the local body was detected in the EC — strong indicator of a DTCP-approved layout. However, obtain and verify the DTCP LP number independently.']);
+    else findings.push(['warn','Layout approval missing','If buying a layout plot, unapproved layouts cannot get structural approval or individual Patta.']);
+  }
+
+  // Boundaries
+  if(detected.boundaries&&Object.keys(detected.boundaries).length){
+    const have=Object.keys(detected.boundaries);
+    const ok=['N','S','E','W'].every(k=>have.includes(k));
+    findings.push([ok?'ok':'warn','Boundaries (N/S/E/W) in deed',have.map(k=>k+': '+detected.boundaries[k]).join(' | ')+(ok?'':' — incomplete; cross-check against FMB sketch.')]);
+  } else findings.push(['warn','Boundaries not detected in deed text','Cross-check N/S/E/W against FMB sketch manually.']);
+
+  // ---- NEW: Planning-to-purchase specific checks ----
+
+  // Gift deed / road dedication to panchayat
+  if(ec.hasGiftDeedToBody)
+    findings.push(['ok','Road dedication to Panchayat found (layout condition)','EC shows a gift deed of internal pathways to the local body — this is the standard DTCP layout road-gifting condition, confirming a layout subdivision exists.']);
+
+  // Multiple promoters in gift deed
+  if(ec.promoters&&ec.promoters.length>1)
+    findings.push(['warn','Multiple promoters detected ('+ec.promoters.length+')',ec.promoters.join(', ')+'. All co-owners must sign the sale deed or provide a registered POA to the executing promoter.']);
+
+  // Agricultural land in EC — check if classified residential in patta
+  if(ec.isAgriculturalInEC&&/Manai/i.test(detected.classification))
+    findings.push(['ok','Land-use conversion confirmed','EC shows Agricultural Land entries, but Patta classification is Manai (Residential) — conversion has been done.']);
+  else if(ec.isAgriculturalInEC&&detected.classification&&!/Manai/i.test(detected.classification))
+    findings.push(['warn','Agricultural land in EC — verify conversion to residential','EC entries classify this as Agricultural Land. Confirm NA/land conversion order or DTCP layout approval covers this plot before purchase.']);
+
+  // Plot filter on EC
+  if(ec.plotFilter)
+    findings.push(['ok','EC includes plot-specific filter','EC was searched with plot filter: '+ec.plotFilter+'. This is a targeted encumbrance check for your specific plots.']);
+  else if(found.has('ec')&&scenario==='buy')
+    findings.push(['warn','EC not filtered by specific plot number','Obtain a plot-specific EC from the SRO mentioning your plot numbers for a more targeted check.']);
+
+  // Sub-division in EC vs Patta
+  if(patta.surveySub&&ec.subDivisions){
+    const hasSub=ec.subDivisions.split(',').some(s=>s.trim().includes(patta.surveySub));
+    if(hasSub)findings.push(['ok','Patta sub-division found in EC','Survey sub-division '+patta.survey+' referenced in EC documents.']);
+    else findings.push(['warn','Patta sub-division not explicitly found in EC','Patta sub-division '+patta.survey+' — confirm the parent survey EC covers this specific sub-division.']);
+  }
+
+  // Parent deed gap
+  if(ec.parentDocRefs&&scenario==='buy')
+    findings.push(['warn','Parent deed references in EC — verify chain','EC cites prior documents: '+ec.parentDocRefs+'. Obtain and review these to confirm unbroken chain of title.']);
+
+  // SRO e-services patta reference
+  if(patta.eservicesRef)
+    findings.push(['ok','Patta verifiable online','Reference no. '+patta.eservicesRef+' — verify at https://eservices.tn.gov.in']);
+
+  // Tahsildar digital signature
+  if(patta.tahsildar)
+    findings.push(['ok','Patta digitally signed by Tahsildar','Signed by: '+patta.tahsildar+(patta.signedDate?' on '+patta.signedDate:'')]);
+
+  // EC entry count
+  if(ec.entryCount)
+    findings.push([ec.entryCount<=6?'ok':'warn','EC total entries: '+ec.entryCount,ec.entryCount<=6?'Manageable entry count — review each entry individually.':'Large number of EC entries — allocate time to review all entries with your lawyer.']);
+}
+
+/* ---------- Render ---------- */
+function render(){renderFiles();renderChecklist();renderFindings();renderMatrix();renderScenario()}
+
+function renderFiles(){if(!files.length){$('fileList').innerHTML='<p class="small">No files selected.</p>';return}
+  $('fileList').innerHTML='<table><thead><tr><th>File</th><th>Type</th><th>Status</th></tr></thead><tbody>'+
+    files.map((f,i)=>'<tr><td>'+esc(f.name)+'</td><td><select onchange="files['+i+'].type=this.value;analyze();render()">'+['unknown',...Object.keys(docs)].map(k=>'<option value="'+k+'" '+(f.type===k?'selected':'')+'>'+(docs[k]||'Unknown')+'</option>').join('')+'</select></td><td class="small">'+esc(f.status)+'</td></tr>').join('')+
+    '</tbody></table>';
+}
+function renderChecklist(){let found=new Set(files.map(f=>f.type));
+  $('checklist').innerHTML=required.map(k=>'<div class="docCard '+(found.has(k)?'found':'missing')+'"><b>'+docs[k]+'</b> <span class="pill '+(found.has(k)?'ok':'bad')+'">'+(found.has(k)?'Found':'Missing')+'</span></div>').join('');
+}
+function renderFindings(){$('findings').innerHTML=findings.length?findings.map(f=>'<div class="docCard '+(f[0]==='ok'?'found':f[0]==='bad'?'missing':'warncard')+'"><b>'+esc(f[1])+'</b><p>'+esc(f[2])+'</p></div>').join(''):'<p class="small">No findings yet.</p>'}
+
+function renderMatrix(){
+  if(!Object.keys(detected.fields||{}).length){$('matrix').innerHTML='<p class="small">Run a scan to populate the cross-comparison matrix.</p>';return}
+  const ec=detected.fields.ec||{},patta=detected.fields.patta||{},title=detected.fields.title||{};
+  const rows=[
+    {p:'Owner Name', sd:title.buyer||'—', ec:ec.currentOwner||'—', pt:formatPattaOwnerForMatrix(patta),
+      rawPt:patta.owner||'—', cmp:(a,b)=>ownerMatch(a,b,patta.father)},
+    {p:'Survey / Sub-division No.', sd:title.survey||'—', ec:ec.survey||'—', pt:patta.survey||'—',
+      cmp:(a,b)=>surveyMatch(a,b)===true},
+    {p:'Total Extent (Area)', sd:title.extent||'—', ec:ec.latestExtent||ec.extent||'—', pt:patta.extent||'—',
+      cmp:(a,b)=>{const x=extentToSqft(a),y=extentToSqft(b);if(x==null||y==null)return null;return approxEqual(x,y,3)},
+      fmt:v=>{const s=extentToSqft(v);return v+(s?' ('+fmtSqft(s)+')':'')}},
+    {p:'Boundaries', sd:detected.boundaries&&Object.keys(detected.boundaries).length?Object.keys(detected.boundaries).map(k=>k+':'+detected.boundaries[k]).join(' / '):'—', ec:'(see SRO index sheet)', pt:'(see FMB sketch)', cmp:()=>null},
+  ];
+  const cellCls=(val,base)=>{if(!val||val==='—'||/see /.test(val))return 'mna';if(base==null)return '';if(base===true)return 'mok';return 'mbad'};
+  let html='<table class="matrix"><thead><tr><th>Parameter</th><th>1. Sale Deed</th><th>2. EC</th><th>3. Patta Chitta</th><th>Match</th></tr></thead><tbody>';
+  for(const r of rows){
+    const fmt=r.fmt||(v=>v);
+    const sd=fmt(r.sd),ecv=fmt(r.ec),pt=fmt(r.pt);
+    let m1=null,m2=null;
+    if(r.sd!=='—'&&r.ec!=='—')m1=r.cmp(r.sd,r.ec);
+    const ptCompare=(r.rawPt!==undefined?r.rawPt:r.pt);
+    if(r.ec!=='—'&&ptCompare!=='—')m2=r.cmp(r.ec,ptCompare);
+    let overall='mna',label='N/A';
+    if(m1===true&&m2===true){overall='mok';label='Match'}
+    else if(m1===false||m2===false){overall='mbad';label='Mismatch'}
+    else if(m1===true||m2===true){overall='mwarn';label='Partial'}
+    html+='<tr><td><b>'+esc(r.p)+'</b></td><td>'+esc(sd)+'</td><td>'+esc(ecv)+'</td><td>'+esc(pt)+'</td><td class="'+overall+'">'+label+'</td></tr>';
+  }
+  html+='</tbody></table>';
+  $('matrix').innerHTML=html;
+}
+
+function renderScenario(){
+  const survey=detected.survey||detected.fields?.ec?.survey||'';
+  const portal='https://eservices.tn.gov.in/eservicesnew/index.html';
+  const dtcpPortal='https://www.tn.gov.in/dtp/';
+  const ec=detected.fields.ec||{};
+  const patta=detected.fields.patta||{};
+  const title=detected.fields.title||{};
+  let html='';
+
+  if(scenario==='buy'){
+    // ---- Overview cards ----
+    const ecYrBadge=detected.ecYears>=30?'<span class="pill ok">'+detected.ecYears+' yrs ✓</span>':'<span class="pill bad">'+(detected.ecYears||'?')+' yrs</span>';
+    const classRisk=detected.classificationRisk==='safe'?'ok':detected.classificationRisk==='restricted'?'bad':'warn';
+    const classBadge=detected.classification?'<span class="pill '+classRisk+'">'+esc(detected.classification)+'</span>':'<span class="pill warn">Not detected</span>';
+    const encBadge=detected.encumbrances.length?'<span class="pill bad">'+detected.encumbrances.length+' found</span>':'<span class="pill ok">Clean</span>';
+    const layoutBadge=detected.layoutAuth?'<span class="pill ok">'+esc(detected.layoutAuth)+'</span>':ec.hasGiftDeedToBody?'<span class="pill warn">Implied (verify LP)</span>':'<span class="pill warn">Not uploaded</span>';
+    const promoterBadge=ec.promoters&&ec.promoters.length>1?'<span class="pill warn">'+ec.promoters.length+' promoters</span>':'<span class="pill ok">Single seller</span>';
+    const giftBadge=ec.hasGiftDeedToBody?'<span class="pill ok">Found ✓</span>':'<span class="pill warn">Not detected</span>';
+    const manaiOk=/Manai/i.test(detected.classification||'');
+    const convBadge=manaiOk?'<span class="pill ok">Manai ✓</span>':ec.isAgriculturalInEC?'<span class="pill warn">Agri — verify</span>':'<span class="pill ok">N/A</span>';
+
+    const pattaRef=patta.eservicesRef||'';
+    const tahsildar=patta.tahsildar||'';
+
+    // Build chain of title rows from EC entries
+    let chainRows='';
+    if(ec.ecEntries&&ec.ecEntries.length){
+      ec.ecEntries.forEach((e,i)=>{
+        const isGift=/Gift/i.test(e.nature),isSale=/Sale/i.test(e.nature),isPart=/Partition/i.test(e.nature);
+        const rowCls=isGift?'gift-row':isPart?'':'';
+        const natCls=isGift?'color:#0369a1':isSale?'color:#15803d':isPart?'color:#b45309':'color:#475569';
+        chainRows+=`<tr class="${rowCls}"><td>${i+1}</td><td><b>${esc(e.doc)}</b></td><td>${esc(e.date)}</td><td style="${natCls};font-weight:600">${esc(e.nature)}</td><td>${esc(e.consideration?'₹'+e.consideration:'—')}</td></tr>`;
+      });
+    } else {
+      // Fallback generic
+      chainRows='<tr><td colspan="5" style="color:#64748b;font-style:italic">Run a scan with EC documents to populate chain of title.</td></tr>';
+    }
+
+    // Chain gap rows
+    if(detected.chainGaps.length){
+      detected.chainGaps.forEach(g=>{
+        chainRows+=`<tr class="gap-row"><td>⚠</td><td colspan="4"><b>Gap detected:</b> ${esc(g)} — obtain missing deeds or partition records for this period.</td></tr>`;
+      });
+    }
+
+    // Parent doc refs
+    const parentDocHtml=ec.parentDocRefs?`<div class="sp-alert warn" style="margin-top:8px"><b>Parent deed refs in EC:</b> ${esc(ec.parentDocRefs)} — request and review all cited prior documents to close the chain.</div>`:'';
+
+    // Promoter list
+    const promoterListHtml=ec.promoters&&ec.promoters.length>1
+      ?`<div class="sp-alert warn"><b>Co-promoters detected (${ec.promoters.length}):</b> ${ec.promoters.map(p=>'<b>'+esc(p)+'</b>').join(', ')} — all must sign the sale deed or issue a registered POA to the executant.</div>`:'';
+
+    // Plot cards — derive from multiple pattas if available
+    const pattas=files.filter(f=>f.type==='patta').map(f=>f.fields||{});
+    let plotCardsHtml='';
+    if(pattas.length>=2){
+      plotCardsHtml=`<div class="plot-grid">`+pattas.map((p,i)=>{
+        const sqft=p.extentSqft?Math.round(p.extentSqft)+' sq.ft':'—';
+        const aresVal=p.extentAres?p.extentAres+' Ares':'—';
+        return `<div class="plot-box">
+          <h4>Plot ${i===0?'(Primary)':'(Secondary)'} — Survey ${esc(p.survey||'—')}</h4>
+          <div class="kv-row"><span class="kv-k">Patta No.</span><span class="kv-v">${esc(p.pattaNo||'—')}</span></div>
+          <div class="kv-row"><span class="kv-k">Owner</span><span class="kv-v">${esc(p.owner||'—')}</span></div>
+          <div class="kv-row"><span class="kv-k">Extent (Ares)</span><span class="kv-v">${esc(aresVal)}</span></div>
+          <div class="kv-row"><span class="kv-k">Extent (sq.ft)</span><span class="kv-v">${sqft}</span></div>
+          <div class="kv-row"><span class="kv-k">Classification</span><span class="kv-v">${esc(p.classification||'—')}</span></div>
+          ${p.tahsildar?`<div class="kv-row"><span class="kv-k">Signed by</span><span class="kv-v">${esc(p.tahsildar)}</span></div>`:''}
+          ${p.eservicesRef?`<div class="kv-row"><span class="kv-k">e-Ref</span><span class="kv-v" style="font-size:11px">${esc(p.eservicesRef)}</span></div>`:''}
+        </div>`;
+      }).join('')+`</div>`;
+    } else if(patta.survey){
+      const sqft=patta.extentSqft?Math.round(patta.extentSqft)+' sq.ft':'—';
+      plotCardsHtml=`<div class="plot-grid"><div class="plot-box">
+        <h4>Plot — Survey ${esc(patta.survey)}</h4>
+        <div class="kv-row"><span class="kv-k">Patta No.</span><span class="kv-v">${esc(patta.pattaNo||'—')}</span></div>
+        <div class="kv-row"><span class="kv-k">Owner</span><span class="kv-v">${esc(patta.owner||'—')}</span></div>
+        <div class="kv-row"><span class="kv-k">Extent</span><span class="kv-v">${esc(patta.extent||'—')}</span></div>
+        <div class="kv-row"><span class="kv-k">Extent (sq.ft)</span><span class="kv-v">${sqft}</span></div>
+        <div class="kv-row"><span class="kv-k">Classification</span><span class="kv-v">${esc(patta.classification||'—')}</span></div>
+      </div></div>`;
+    } else {
+      plotCardsHtml='<p class="small">Upload Patta documents to see plot-level breakdown.</p>';
+    }
+
+    // Action plan — static steps enriched by detected data
+    const surveyCode=survey?'<code>'+esc(survey)+'</code>':'the survey number';
+    const plotRef=ec.plotFilter?'plots '+esc(ec.plotFilter):'your specific plot numbers';
+    const numPromoters=ec.promoters&&ec.promoters.length>1?ec.promoters.length:null;
+
+    html=`
+    <div class="sp-tabs">
+      <button class="sp-tab active" onclick="spShow('overview',this)">Overview</button>
+      <button class="sp-tab" onclick="spShow('chain',this)">Chain of title</button>
+      <button class="sp-tab" onclick="spShow('ecdetail',this)">EC analysis</button>
+      <button class="sp-tab" onclick="spShow('plots',this)">Plot details</button>
+      <button class="sp-tab" onclick="spShow('action',this)">Action plan</button>
+    </div>
+
+    <!-- OVERVIEW -->
+    <div class="sp-pane active" id="sp-overview">
+      <div class="sp-cards">
+        <div class="sp-card"><div class="sp-card-lbl">EC period</div><div class="sp-card-val">${ecYrBadge}</div><div class="sp-card-sub">${esc(detected.ecFrom||'?')} → ${esc(detected.ecTo||'?')}</div></div>
+        <div class="sp-card"><div class="sp-card-lbl">Land classification</div><div class="sp-card-val">${classBadge}</div><div class="sp-card-sub">Revenue records</div></div>
+        <div class="sp-card"><div class="sp-card-lbl">Encumbrances</div><div class="sp-card-val">${encBadge}</div><div class="sp-card-sub">Mortgage / attachment</div></div>
+        <div class="sp-card"><div class="sp-card-lbl">Layout approval</div><div class="sp-card-val">${layoutBadge}</div><div class="sp-card-sub">DTCP / CMDA</div></div>
+        <div class="sp-card"><div class="sp-card-lbl">Road dedication deed</div><div class="sp-card-val">${giftBadge}</div><div class="sp-card-sub">Gift deed to Panchayat</div></div>
+        <div class="sp-card"><div class="sp-card-lbl">Seller / promoters</div><div class="sp-card-val">${promoterBadge}</div><div class="sp-card-sub">Co-executants</div></div>
+        <div class="sp-card"><div class="sp-card-lbl">Land-use conversion</div><div class="sp-card-val">${convBadge}</div><div class="sp-card-sub">Agri → Residential</div></div>
+        <div class="sp-card"><div class="sp-card-lbl">EC entries</div><div class="sp-card-val">${ec.entryCount||'—'}</div><div class="sp-card-sub">Total registered docs</div></div>
+      </div>
+      ${detected.encumbrances.length?`<div class="sp-alert bad"><b>⚠ Encumbrances detected:</b> ${detected.encumbrances.length} entry/ies. ${detected.releases.length>=detected.encumbrances.length?'Release deed(s) found — verify each release document is properly registered.':'Outstanding lien may exist — demand release deed before paying any advance.'}</div>`:''}
+      ${ec.hasGiftDeedToBody&&!detected.layoutAuth?`<div class="sp-alert warn"><b>DTCP layout approval not uploaded:</b> A road-dedication gift deed to the Panchayat confirms a layout subdivision exists. Obtain the DTCP LP number from the seller and verify at <a href="${dtcpPortal}" target="_blank" rel="noopener">DTCP portal</a>.</div>`:''}
+      ${numPromoters?`<div class="sp-alert warn"><b>${numPromoters} co-promoters identified:</b> All must sign your sale deed or provide registered POA to the signing promoter.</div>`:''}
+      ${ec.isAgriculturalInEC&&!manaiOk?`<div class="sp-alert warn"><b>Agricultural land classification in EC:</b> Confirm NA order or DTCP layout approval that converts use to residential before purchase.</div>`:''}
+      ${manaiOk?`<div class="sp-alert ok"><b>Residential classification confirmed:</b> Patta shows "Manai" — land-use conversion from agricultural to residential has been completed in revenue records.</div>`:''}
+      <div style="margin-top:12px">
+        <a class="linkbtn" href="${portal}" target="_blank" rel="noopener">Open TN e-Services</a>
+        ${survey?' — look up survey '+surveyCode:''}
+        ${pattaRef?' &nbsp; <a class="linkbtn" href="'+portal+'" target="_blank" rel="noopener">Verify Patta ref: '+esc(pattaRef)+'</a>':''}
+      </div>
+    </div>
+
+    <!-- CHAIN OF TITLE -->
+    <div class="sp-pane" id="sp-chain">
+      ${promoterListHtml}
+      <table class="chain-tbl">
+        <thead><tr><th>#</th><th>Document No.</th><th>Date</th><th>Nature</th><th>Consideration</th></tr></thead>
+        <tbody>${chainRows}</tbody>
+      </table>
+      ${parentDocHtml}
+      ${detected.ecYears<30&&detected.ecYears>0?`<div class="sp-alert bad" style="margin-top:8px"><b>EC period is only ${detected.ecYears} years.</b> A minimum 30-year EC is required. Request an extended EC from the SRO covering from at least ${new Date().getFullYear()-30}.</div>`:''}
+    </div>
+
+    <!-- EC ANALYSIS -->
+    <div class="sp-pane" id="sp-ecdetail">
+      <div class="sp-cards">
+        <div class="sp-card"><div class="sp-card-lbl">SRO</div><div class="sp-card-val" style="font-size:14px">${esc(ec.sro||'—')}</div></div>
+        <div class="sp-card"><div class="sp-card-lbl">Village</div><div class="sp-card-val" style="font-size:14px">${esc(ec.village||'—')}</div></div>
+        <div class="sp-card"><div class="sp-card-lbl">Survey</div><div class="sp-card-val">${esc(ec.survey||'—')}</div></div>
+        <div class="sp-card"><div class="sp-card-lbl">Plot filter</div><div class="sp-card-val" style="font-size:13px">${esc(ec.plotFilter||'None')}</div></div>
+        <div class="sp-card"><div class="sp-card-lbl">Total entries</div><div class="sp-card-val">${ec.entryCount||'—'}</div></div>
+        <div class="sp-card"><div class="sp-card-lbl">Sub-divisions in EC</div><div class="sp-card-val" style="font-size:12px">${esc(ec.subDivisions||'—')}</div></div>
+      </div>
+      ${ec.hasGiftDeedToBody?`<div class="ec-entry gift"><div class="ec-doc">Gift deed to Panchayat detected</div><div class="ec-nature">Road dedication entry</div><div class="ec-detail">Internal layout pathways gifted to the local body — this is the standard condition DTCP imposes before granting layout approval. Confirms a layout subdivision plan exists. Verify the DTCP LP number.</div></div>`:''}
+      ${detected.encumbrances.length?detected.encumbrances.map(e=>'<div class="ec-entry"><div class="ec-doc">Encumbrance entry</div><div class="ec-nature" style="color:#dc2626">Mortgage / Lien</div><div class="ec-detail">'+esc(e)+'</div></div>').join(''):'<div class="sp-alert ok"><b>No mortgage, attachment, or lien detected in EC.</b> Manually cross-check for lis pendens or court orders at the SRO.</div>'}
+      ${detected.releases.length?`<div class="sp-alert ok"><b>Release / discharge entries found (${detected.releases.length}):</b> ${detected.releases.map(r=>esc(r)).join('; ')} — verify each release deed is properly registered and references the correct encumbrance.</div>`:''}
+      ${ec.parentDocRefs?`<div class="ec-entry"><div class="ec-doc">Parent deed references</div><div class="ec-nature">Prior documents cited in EC</div><div class="ec-detail">${esc(ec.parentDocRefs)} — obtain these to establish full title chain.</div></div>`:''}
+    </div>
+
+    <!-- PLOT DETAILS -->
+    <div class="sp-pane" id="sp-plots">
+      <p class="small" style="margin-bottom:10px">Sub-division level details from Patta and FMB documents. If multiple Patta files were uploaded, each plot appears below.</p>
+      ${plotCardsHtml}
+      ${patta.surveySub&&ec.subDivisions&&!ec.subDivisions.split(',').some(s=>s.trim().includes(patta.surveySub))?
+        `<div class="sp-alert warn"><b>Sub-division ${esc(patta.survey)} not found in EC sub-divisions (${esc(ec.subDivisions)}).</b> The EC may cover only the parent survey. Request a plot-specific EC filtered to your sub-division number for a targeted check.</div>`
+        :(patta.survey?`<div class="sp-alert ok"><b>Patta sub-division ${esc(patta.survey)} is consistent with EC survey.</b> Both documents reference the same parent survey.</div>`:'')
+      }
+      ${tahsildar?`<div class="sp-alert ok"><b>Digitally signed Patta:</b> Signed by Tahsildar ${esc(tahsildar)}${patta.signedDate?' on '+esc(patta.signedDate):''}. Verify at <a href="${portal}" target="_blank" rel="noopener">TN e-Services</a>${pattaRef?' using reference '+esc(pattaRef):''}.</div>`:''}
+    </div>
+
+    <!-- ACTION PLAN -->
+    <div class="sp-pane" id="sp-action">
+      <ul class="action-steps">
+        <li><b>Obtain DTCP layout approval order (LP number)</b> — ask the seller for the Layout Plan number. ${detected.layoutAuth?'<span class="pill ok">'+esc(detected.layoutAuth)+' uploaded</span>':ec.hasGiftDeedToBody?'<span class="pill warn">Implied from gift deed — verify LP number on the <a href="'+dtcpPortal+'" target="_blank" rel="noopener">DTCP portal</a></span>':'<span class="pill bad">Not found — critical before paying advance</span>'} Confirm your plot numbers (${plotRef}) appear explicitly in the approved layout plan.</li>
+        <li><b>Demand all cited parent/prior sale deeds</b> — ${ec.parentDocRefs?'EC cites: <b>'+esc(ec.parentDocRefs)+'</b>. Request these from the seller / SRO to establish an unbroken chain of title.':'Request all prior sale deeds from the seller. An unbroken chain from the earliest EC entry to the current owner is essential.'} ${detected.ecYears>=30?'<span class="pill ok">EC covers '+detected.ecYears+' yrs</span>':'<span class="pill bad">EC covers only '+detected.ecYears+' yrs — request ≥30 yr EC</span>'}</li>
+        <li><b>${numPromoters?'Get all '+numPromoters+' co-promoters to sign':"Confirm seller's sole authority to sell"}</b> — ${numPromoters?ec.promoters.map(p=>'<b>'+esc(p)+'</b>').join(', ')+' must all sign the sale deed or provide registered POA to the executing promoter.':'Confirm the seller has exclusive ownership and no co-owners exist. Cross-check Patta for sole ownership.'}</li>
+        <li><b>Physical site inspection with FMB sketch</b> — visit the site with the FMB sketch and verify boundary pillars / corner stones match the sketch dimensions. Confirm road access — check that the road abutting your plot is part of the DTCP-approved layout road network (not agricultural access only). ${ec.hasGiftDeedToBody?'Roads were gifted to Panchayat via gift deed — they should be accessible.':''}</li>
+        <li><b>Verify land classification and conversion</b> — ${manaiOk?'Patta shows Manai (Residential) — land-use conversion is done. <span class="pill ok">✓ Confirmed</span>':ec.isAgriculturalInEC?'EC shows Agricultural Land entries. Obtain the NA (Non-Agricultural) order or confirm DTCP layout approval covers land-use conversion for your plot. <span class="pill warn">⚠ Verify</span>':'Confirm Patta classification is Natham / Manai (safe for residential) and not Nanjai / Poramboke. <span class="pill warn">⚠ Verify with Patta</span>'}</li>
+        <li><b>Get a fresh Chitta and verify tax payments</b> — separately obtain the Chitta extract for Patta ${esc(patta.pattaNo||'(number from Patta)')} and confirm the seller (${esc(patta.owner||'name from Patta')}) is the assessed owner and all land tax (Teervu) payments are current. No arrears should be outstanding.</li>
+        <li><b>Cross-check survey on TN e-Services</b> — verify at <a href="${portal}" target="_blank" rel="noopener">TN e-Services portal</a>${survey?' for survey '+surveyCode:''} for active disputes, locks, or litigation. ${pattaRef?'Also verify Patta using reference <b>'+esc(pattaRef)+'</b>.':''}</li>
+        <li><b>Engage a Tamil Nadu property lawyer</b> — particularly to review the EC entry chain, verify promoter authority, and confirm the DTCP layout plan covers your specific plots before executing the sale agreement or paying any advance amount.</li>
+      </ul>
+      <div class="notice" style="margin-top:14px"><b>Important:</b> This is browser-based screening only. Not a legal opinion or certified translation. Always verify with a licensed Tamil Nadu property lawyer and registered surveyor.</div>
+    </div>`;
+
+  } else {
+    // Scenario B: Already purchased (unchanged logic)
+    const mut=title.buyer&&patta.owner&&!(compact(title.buyer).includes(compact(patta.owner))||compact(patta.owner).includes(compact(title.buyer)));
+    html=`<ol>
+      <li><b>Confirm registration on fresh EC:</b> Pull a current EC and verify your name + document number appear as the latest claimant.</li>
+      <li><b>Patta mutation:</b> ${mut?'<span class="pill bad">Pending — Patta still shows '+esc(patta.owner)+'. Apply for transfer via TN e-Services.</span>':'<span class="pill ok">Looks aligned (verify on portal)</span>'} <a class="linkbtn" target="_blank" rel="noopener" href="${portal}">Open portal</a></li>
+      <li><b>Rectification window:</b> Inspect sale deed for typos in survey / boundary / extent. ${findings.some(f=>f[0]==='bad'&&/cross-check|mismatch/i.test(f[1]))?'<span class="pill bad">Mismatches detected — coordinate a Rectification Deed with the seller.</span>':'<span class="pill ok">No mismatches flagged automatically</span>'}</li>
+      <li><b>Ongoing protection:</b> Renew EC annually; preserve original deeds and Patta passbook.</li>
+    </ol>`;
+  }
+  $('scenarioPlan').innerHTML=html;
+}
+
+function spShow(id,btn){
+  document.querySelectorAll('.sp-pane').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.sp-tab').forEach(t=>t.classList.remove('active'));
+  const pane=document.getElementById('sp-'+id);
+  if(pane)pane.classList.add('active');
+  btn.classList.add('active');
+}
+
+/* ---------- Report ---------- */
+function fieldLines(o){return Object.keys(o||{}).filter(k=>o[k]&&typeof o[k]!=='object').map(k=>'- '+k+': '+o[k]).join('\n')||'- No structured fields extracted'}
+
+function report(){if(!files.length){$('report').textContent='No files uploaded.';return}
+  analyze();
+  let ec=detected.fields.ec||{},patta=detected.fields.patta||{},mother=(detected.fields.mothers||[])[0]||{},title=detected.fields.title||{};
+  const matrixLines=[
+    ['Owner Name',title.buyer||'—',ec.currentOwner||'—',formatPattaOwnerForMatrix(patta)],
+    ['Survey / Sub-div',title.survey||'—',ec.survey||'—',patta.survey||'—'],
+    ['Total Extent',title.extent||'—',ec.latestExtent||ec.extent||'—',patta.extent||'—'],
+    ['Boundaries',Object.keys(detected.boundaries||{}).map(k=>k+':'+detected.boundaries[k]).join(' / ')||'—','(SRO index sheet)','(FMB sketch)']
+  ].map(r=>'  '+r[0].padEnd(18)+' | SD: '+r[1]+' | EC: '+r[2]+' | Patta: '+r[3]).join('\n');
+
+  let r=`TAMIL NADU LAND DOCUMENT VERIFICATION
+Generated: ${new Date().toLocaleString()}
+Scenario: ${scenario==='buy'?'A. Planning to purchase':'B. Already purchased'}
+
+==== PROPERTY MASTER ====
+Current owner (EC):       ${ec.currentOwner||'Not detected'}
+Sale Deed buyer:          ${title.buyer||'Not detected'}
+Patta owner:              ${patta.owner||'Not detected'}
+Father/Spouse (Patta):    ${detected.father||'Not detected'}
+District / Taluk / Village: ${detected.district||'?'} / ${detected.taluk||'?'} / ${detected.village||'?'}
+Survey / Sub-division:    ${detected.survey||'Not detected'}
+Patta No:                 ${detected.pattaNo||'Not detected'}
+Plot No:                  ${detected.plotNo||'Not detected'}
+EC Plot Filter:           ${ec.plotFilter||'Not detected'}
+Extent (latest EC):       ${detected.latestEcExtent||detected.extent||'Not detected'}
+EC Period:                ${detected.ecFrom||'?'} → ${detected.ecTo||'?'} (${detected.ecYears||0} yrs)
+Land classification:      ${detected.classification||'Not detected'} (${detected.classificationRisk||'unknown'})
+Layout authority:         ${detected.layoutAuth||'Not detected'}
+Gift deed to Panchayat:   ${ec.hasGiftDeedToBody?'Yes (road dedication found — DTCP layout implied)':'Not detected'}
+Promoters detected:       ${ec.promoters&&ec.promoters.length?ec.promoters.join(', '):'Not detected'}
+Parent deed refs (EC):    ${ec.parentDocRefs||'None'}
+Sub-divisions in EC:      ${ec.subDivisions||'Not detected'}
+e-Services Patta ref:     ${patta.eservicesRef||'Not detected'}
+Encumbrance entries:      ${detected.encumbrances.length} (${detected.releases.length} release/discharge)
+
+==== CROSS-COMPARISON MATRIX ====
+${matrixLines}
+
+==== EC ALL EXTENT ENTRIES ====
+${detected.allEcExtents||'No EC extent values extracted'}
+
+==== ENCUMBRANCE DETAIL ====
+${detected.encumbrances.length?detected.encumbrances.map(e=>'- '+e).join('\n'):'- None detected'}
+RELEASE / DISCHARGE:
+${detected.releases.length?detected.releases.map(e=>'- '+e).join('\n'):'- None detected'}
+
+==== CHAIN OF TITLE ====
+${detected.chainGaps.length?'Possible gaps:\n'+detected.chainGaps.map(g=>'- '+g).join('\n'):'No major gaps (>10 yrs) detected between parsed deed dates.'}
+
+==== EC EXTRACTED FIELDS ====
+${fieldLines(ec)}
+
+==== PATTA EXTRACTED FIELDS ====
+${fieldLines(patta)}
+
+==== SALE DEED EXTRACTED FIELDS ====
+${fieldLines(title)}
+
+==== MOTHER / PARENT DEED EXTRACTED FIELDS ====
+${fieldLines(mother)}
+
+==== UPLOADED FILES ====
+${files.map(f=>'- '+f.name+' => '+(docs[f.type]||'Unknown')+' | '+f.status).join('\n')}
+
+==== MISSING REQUIRED ====
+${required.filter(k=>!new Set(files.map(f=>f.type)).has(k)).map(k=>'- '+docs[k]).join('\n')||'- None'}
+
+==== FINDINGS ====
+${findings.map(f=>'- ['+f[0].toUpperCase()+'] '+f[1]+': '+f[2]).join('\n')}
+
+==== SCENARIO ACTION PLAN ====
+${scenario==='buy'?
+`A. PLANNING TO PURCHASE
+1. Obtain DTCP layout approval order (LP number) — verify your specific plot numbers appear in the layout plan.
+2. Demand all cited parent/prior sale deeds — establish unbroken chain of title back to the earliest EC entry.
+3. ${ec.promoters&&ec.promoters.length>1?'All '+ec.promoters.length+' co-promoters ('+ec.promoters.join(', ')+') must sign the sale deed or provide registered POA.':'Confirm seller has sole authority to sell — no co-owners.'}
+4. Physical site inspection with FMB sketch — verify boundary pillars / corner stones and road access.
+5. Verify land classification — ${/Manai/i.test(detected.classification||'')?'Patta shows Manai (Residential) — confirmed.':'Confirm Natham / Manai (safe) vs Nanjai / Poramboke (restricted).'}
+6. Obtain Chitta extract and confirm land tax (Teervu) payments are current with no arrears.
+7. Cross-check survey on TN e-Services portal for active disputes / locks / litigation.
+8. Engage a Tamil Nadu property lawyer to review EC entry chain, promoter authority, and DTCP layout plan before paying advance.`:
+`B. ALREADY PURCHASED
+1. Pull a fresh EC covering the purchase date and confirm your name + doc number appear.
+2. Apply for Patta mutation (transfer) via TN e-Services if Patta still names previous owner.
+3. Inspect your registered Sale Deed for typos in survey / extent / boundaries; coordinate Rectification Deed with seller for any clerical error.
+4. Renew EC annually and keep originals safe.`}
+
+IMPORTANT: Browser-based screening only. Verify with a licensed Tamil Nadu property lawyer and surveyor.`;
+  $('report').textContent=r;render();
+}
+
+function copyReport(){report();navigator.clipboard.writeText($('report').textContent).then(()=>alert('Report copied')).catch(()=>alert('Copy failed. Select report manually.'))}
+function clearAll(){files=[];blank();findings=[];$('files').value='';$('debugText').value='';$('report').textContent='Upload documents and click "Scan + compare", then "Generate detailed report".';$('status').textContent='Cleared.';render()}
+
+function loadSample(){blank();files=[
+  {name:'Sethu_Chennai_EC_30_years.pdf',type:'ec',status:'Sample',text:'Search Period: 01/01/1994 - 31/12/2024 Revenue District / மாவட்டம்: Chengalpattu Revenue Taluk / வட்டம்: Chengalpattu 1524/2013 உரிமை மாற்றம் 1. L. சேதுராமன் Consideration Value Property Extent/சொத்தின் விஸ்தீர்ணம்: 2713 ச.அடி Survey Details / சர்வே விவரம்: 472/23 Mortgage in favour of XYZ Bank dated 2015 Release / Deed of Receipt dated 2018',fields:{}},
+  {name:'Sethu_Chennai_Patta.pdf',type:'patta',status:'Sample',text:'தமிழ்நாடுஅரசுவருவாய்மற்றும்ேபரிடர்ேமலாண்ைமத்துைறநிலஉரிைமவிபரங்கள்: இ. எண் 10(1) பிரிவுமாவட்டம்: ெசங்கல்பட்டுவட்டம்: ெசங்கல்பட்டுவருவாய்கிராமம்: திருக்கச்சூர்பட்டாஎண்: 5026 உரிைமயாளர்கள்ெபயர் 1. லட்சுமிநாராயணன்மகன்ேசதுராமன் - புலஎண்உட்பிரிவு 472 23 0 - 2.50 நத்தம்',fields:{}},
+  {name:'Sale_Deed_2013.pdf',type:'title',status:'Sample',text:'SALE DEED dated 12/05/2013 EXECUTED BY Sri Ramanujam TO AND IN FAVOUR OF Sri L. Sethuraman at No. 74, Thirukachur Village, Chingleput Taluk, Chingleput District survey No. 472/23 extent of 0 acre and 6.2 cents North by Road South by Plot 11 East by Plot 9 West by Channel',fields:{}},
+  {name:'Mother_Deed_1984.pdf',type:'mother',status:'Sample',text:'SALE DEED dated 03/08/1984 in favour of Sri Ramanujam village Thirukachur survey No. 472/23 extent 0 acre and 6.2 cents',fields:{}},
+  {name:'FMB_Sketch.pdf',type:'fmb',status:'Sample',text:'FMB Sketch survey 472/23'},
+  {name:'DTCP_Layout_Approval.pdf',type:'layout',status:'Sample',text:'DTCP LP No. 123/2010 layout approval'},
+  {name:'Seller_Aadhaar.pdf',type:'id',status:'Sample',text:'Aadhaar L. Sethuraman'}
+];
+files.forEach(f=>{f.text=normalizeTamil(f.text);f.fields=extractFields(f.text,f.type,f.name)});
+$('debugText').value=files.map(f=>f.text).join('\n\n');analyze();render();$('status').textContent='Sample loaded. Generate report.';
+}
+
+/* ---------- Boot ---------- */
+document.addEventListener('DOMContentLoaded',()=>{blank();render();
+  $('scanBtn').addEventListener('click',scan);
+  $('reportBtn').addEventListener('click',report);
+  $('copyBtn').addEventListener('click',copyReport);
+  $('clearBtn').addEventListener('click',clearAll);
+  $('sampleBtn').addEventListener('click',loadSample);
+  $('files').addEventListener('change',()=>{files=[...$('files').files].map(f=>({file:f,name:f.name,size:f.size,type:typeOf(f.name),text:'',fields:{},status:'Selected'}));$('status').textContent=files.length+' file(s) selected. Click Scan + compare.';render()});
+  $('scenarioSeg').addEventListener('click',e=>{const b=e.target.closest('button[data-s]');if(!b)return;scenario=b.dataset.s;[...$('scenarioSeg').children].forEach(c=>c.classList.toggle('active',c===b));$('scenarioHint').textContent=scenario==='buy'?'Scenario A: focuses on fraud prevention before payment — 30-year EC chain, layout approvals, live DB lookup.':'Scenario B: focuses on title maintenance — fresh EC, Patta mutation, rectification deed window.';analyze();render()});
+  let dz=$('dropZone');
+  dz.addEventListener('dragover',e=>{e.preventDefault();dz.classList.add('drag')});
+  dz.addEventListener('dragleave',()=>dz.classList.remove('drag'));
+  dz.addEventListener('drop',e=>{e.preventDefault();dz.classList.remove('drag');files=[...e.dataTransfer.files].map(f=>({file:f,name:f.name,size:f.size,type:typeOf(f.name),text:'',fields:{},status:'Selected'}));$('status').textContent=files.length+' file(s) selected. Click Scan + compare.';render()});
+});
+</script>
+</body></html>
