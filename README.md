@@ -86,12 +86,12 @@ The tool normalizes survey and sub-division numbers.
 Example:
 
 ```text
-472/23
-472 23
-Survey No. 472/23
+470/20
+470 20
+Survey No. 470/20
 ```
 
-The Patta OCR issue where `472 23` could be incorrectly interpreted as `4722/3` is handled by normalization logic.
+The Patta OCR issue where `470 20` could be incorrectly interpreted as `4702/0` is handled by normalization logic.
 
 ---
 
@@ -117,7 +117,7 @@ Example:
 
 ```text
 Sale Deed: 0 acre and 6.2 cents
-EC:        2713 sq.ft
+EC:       1903 sq.ft
 Patta:     0-2.50 hectare/ares approx
 ```
 
@@ -430,6 +430,6 @@ MIT License
 
 ## Author
 
-Created by Sethu Lakshminarayanan.
+Created by Sethuraman Lakshminarayanan.
 
 For Tamil Nadu property document pre-screening and title verification support.
